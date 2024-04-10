@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decorator Pattern Example</title>
+<style>
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<div class="button-container" id="buttonContainer">
+    <button class="button" id="button">Clique aqui</button>
+</div>
+
+<script>
+// Componente Concreto
+class ButtonComponent {
+  constructor(text) {
+    this.button = document.createElement('button');
+    this.button.innerHTML = text;
+    this.button.classList.add('button');
+  }
+
+  render() {
+    const buttonContainer = document.getElementById('buttonContainer');
+    buttonContainer.appendChild(this.button);
+  }
+}
+
+// Decorator Concreto
+class BorderDecorator {
+  constructor(component, color) {
+    this.component = component;
+    this.color = color;
+  }
+
+  render() {
+    this.component.render();
+    this.component.button.style.borderColor = this.color;
+  }
+}
+
+// Criando o componente original
+const buttonComponent = new ButtonComponent('Novo botao');
+
+// Aplicando o decorador
+const borderDecorator = new BorderDecorator(buttonComponent, 'blue');
+
+// Desenhando o botão com a borda decorada
+borderDecorator.render();
+</script>
+
+</body>
+</html>

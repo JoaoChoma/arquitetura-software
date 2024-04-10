@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Decorator Pattern Example</title>
+<style>
+  .input {
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .input:focus {
+    border-color: blue;
+  }
+</style>
+</head>
+<body>
+
+<div class="app">
+    <h2>Insira o seu pix:</h2> 
+    <input type="text" id="decoratedInput">
+</div>
+
+
+<script>
+// Componente Concreto
+class BasicInput {
+  constructor(element) {
+    this.element = element;
+  }
+
+  // Método para adicionar comportamento padrão ao input
+  decorate() {
+    this.element.classList.add('input');
+  }
+}
+
+// Decorator Concreto: Adiciona a funcionalidade de mudar a cor ao clicar
+class ClickColorChangeDecorator {
+  constructor(input) {
+    this.input = input;
+    this.onClick = this.onClick.bind(this);
+  }
+
+  // Método para adicionar comportamento de mudar a cor ao clicar
+  decorate() {
+    this.input.element.addEventListener('click', this.onClick);
+  }
+
+  onClick() {
+    this.input.element.style.borderColor = 'green';
+  }
+}
+
+// Criando o input básico
+const basicInput = new BasicInput(document.getElementById('decoratedInput'));
+
+// Aplicando o decorador de mudança de cor ao clicar
+const clickColorChangeDecorator = new ClickColorChangeDecorator(basicInput);
+
+// Decorando o input
+basicInput.decorate();
+clickColorChangeDecorator.decorate();
+</script>
+
+</body>
+</html>

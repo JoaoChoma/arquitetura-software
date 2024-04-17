@@ -1,9 +1,10 @@
 # Explique o papel da arquitetura de software no desenvolvimento de sistemas, destacando sua importância para a manutenção, escalabilidade e eficiência dos sistemas.
 
 A arquitetura de software desempenha um papel fundamental no desenvolvimento de sistemas, pois define a estrutura e organização do software. Ela influencia diretamente a manutenção, escalabilidade e eficiência dos sistemas.
-    + Manutenção: Uma arquitetura bem definida facilita a manutenção do sistema ao separar as preocupações e responsabilidades em módulos ou componentes distintos. Isso permite que as alterações sejam feitas de forma mais isolada e controlada, reduzindo o risco de introduzir erros em outras partes do sistema.
-    + Escalabilidade: Uma arquitetura escalável permite que o sistema cresça para atender a demandas crescentes de usuários ou processamento sem comprometer o desempenho ou a disponibilidade. Isso é alcançado através da modularidade, distribuição de carga e adoção de tecnologias adequadas.
-    + Eficiência: Uma arquitetura bem projetada pode otimizar o desempenho do sistema, garantindo que os recursos sejam utilizados de forma eficiente. Isso inclui a minimização de gargalos, a otimização de algoritmos e a seleção de tecnologias adequadas para cada componente do sistema.
+
++ Manutenção: Uma arquitetura bem definida facilita a manutenção do sistema ao separar as preocupações e responsabilidades em módulos ou componentes distintos. Isso permite que as alterações sejam feitas de forma mais isolada e controlada, reduzindo o risco de introduzir erros em outras partes do sistema.
++ Escalabilidade: Uma arquitetura escalável permite que o sistema cresça para atender a demandas crescentes de usuários ou processamento sem comprometer o desempenho ou a disponibilidade. Isso é alcançado através da modularidade, distribuição de carga e adoção de tecnologias adequadas.
++ Eficiência: Uma arquitetura bem projetada pode otimizar o desempenho do sistema, garantindo que os recursos sejam utilizados de forma eficiente. Isso inclui a minimização de gargalos, a otimização de algoritmos e a seleção de tecnologias adequadas para cada componente do sistema.
 
 ## Estudo de caso: 
 
@@ -19,9 +20,9 @@ Ao desenvolver um aplicativo de rede social, o desenvolvedor enfrentaria várias
 
 # Discorra sobre as diferentes visões arquiteturais, como visão lógica, física e de processo, e explique a relevância de cada uma no contexto de sistemas de software. Dê exemplos de situações em que cada visão seria aplicável.
 
-    + Visão lógica: Esta visão foca nos componentes e na estrutura lógica do sistema, como classes, módulos e suas interações. É relevante para entender a organização interna do software e como suas partes se relacionam.
-    + Visão física: Esta visão descreve a distribuição física dos componentes do sistema em diferentes dispositivos ou servidores. É relevante para sistemas distribuídos ou em nuvem, onde a localização dos recursos impacta no desempenho e na disponibilidade do sistema.
-    + Visão de processo: Esta visão descreve os processos ou fluxos de trabalho que ocorrem dentro do sistema. É relevante para entender como as diferentes partes do sistema colaboram para alcançar os objetivos definidos.
++ Visão lógica: Esta visão foca nos componentes e na estrutura lógica do sistema, como classes, módulos e suas interações. É relevante para entender a organização interna do software e como suas partes se relacionam.
++ Visão física: Esta visão descreve a distribuição física dos componentes do sistema em diferentes dispositivos ou servidores. É relevante para sistemas distribuídos ou em nuvem, onde a localização dos recursos impacta no desempenho e na disponibilidade do sistema.
++ Visão de processo: Esta visão descreve os processos ou fluxos de trabalho que ocorrem dentro do sistema. É relevante para entender como as diferentes partes do sistema colaboram para alcançar os objetivos definidos.
 
 ## Estudo de caso: 
 
@@ -40,6 +41,6 @@ Ao construir um sistema de gerenciamento de atendimento médico para um hospital
 
 # Explique os padrões de projeto, incluindo padrões criacionais, estruturais e comportamentais, e sua aplicabilidade no desenvolvimento de software. Dê exemplos de cada tipo de padrão e como eles podem ser implementados em um contexto prático.
 
-    + Padrões criacionais: Estes padrões são usados para criar objetos de forma mais flexível e eficiente. Exemplo: Singleton, que garante a existência de apenas uma instância de uma classe.
-    + Padrões estruturais: Estes padrões lidam com a composição de classes e objetos para formar estruturas maiores. Exemplo: Adapter, que permite a interação entre interfaces incompatíveis.
-    + Padrões comportamentais: Estes padrões estão preocupados com a comunicação entre objetos. Exemplo: Observer, que define uma dependência um-para-muitos entre objetos, de modo que quando um objeto muda de estado, todos os seus dependentes são notificados e atualizados automaticamente.
++ Padrões criacionais: Estes padrões são usados para criar objetos de forma mais flexível e eficiente. Exemplo: Singleton, que garante a existência de apenas uma instância de uma classe.
++ Padrões estruturais: Estes padrões lidam com a composição de classes e objetos para formar estruturas maiores. Exemplo: Adapter, que permite a interação entre interfaces incompatíveis.
++ Padrões comportamentais: Estes padrões estão preocupados com a comunicação entre objetos. Exemplo: Observer, que define uma dependência um-para-muitos entre objetos, de modo que quando um objeto muda de estado, todos os seus dependentes são notificados e atualizados automaticamente.

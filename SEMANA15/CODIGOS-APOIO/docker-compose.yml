@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  flask:
+    build: .
+    ports:
+      - "5001:5000"
+    volumes:
+      - .:/code
+    environment:
+      - FLASK_ENV=development
+      - FLASK_APP=app.py
+    command: flask run --host=0.0.0.0
+    depends_on:
+      - redis
+
+  redis:
+    image: "redis:alpine"

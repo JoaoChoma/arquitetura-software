@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "firebase": "^10.12.1"
+  },
+  "type": "module"
+}

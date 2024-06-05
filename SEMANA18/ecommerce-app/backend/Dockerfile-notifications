@@ -1,0 +1,12 @@
+FROM node:14
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY backend-notifications.js .
+
+EXPOSE 8083
+
+CMD ["node", "backend-notifications.js"]

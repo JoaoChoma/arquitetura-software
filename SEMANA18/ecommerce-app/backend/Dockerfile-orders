@@ -1,0 +1,12 @@
+FROM node:14
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY lambda-order-processor.js .
+
+EXPOSE 8082
+
+CMD ["node", "lambda-order-processor.js"]

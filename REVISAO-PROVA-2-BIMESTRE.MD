@@ -1,19 +1,21 @@
 Resumo dos Conteúdos de Arquiteturas de Software
 1. Arquitetura Monolítica
+
 A arquitetura monolítica é um padrão de design de software onde uma aplicação é construída como uma única unidade de implementação e implantação. Seus principais componentes são:
 
-Interface do Usuário (UI): Interage com os usuários finais.
-Lógica de Negócios: Contém as regras e processos de negócios da aplicação.
-Acesso a Dados: Interage com o banco de dados ou outros sistemas de armazenamento.
-Exemplos incluem sistemas de e-commerce, ferramentas de gestão de projetos, aplicações financeiras e plataformas de ensino à distância​​.
+- Interface do Usuário (UI): Interage com os usuários finais.
+- Lógica de Negócios: Contém as regras e processos de negócios da aplicação.
+- Acesso a Dados: Interage com o banco de dados ou outros sistemas de armazenamento.
+- Exemplos incluem sistemas de e-commerce, ferramentas de gestão de projetos, aplicações financeiras e plataformas de ensino à distância​​.
 
 2. Arquitetura em Camadas
+
 A arquitetura em camadas organiza um sistema em camadas distintas, onde cada camada tem uma responsabilidade específica e se comunica apenas com camadas adjacentes. As principais camadas são:
 
-Camada de Apresentação (UI): Interface com o usuário.
-Camada de Aplicação: Lógica de negócios e processamento.
-Camada de Dados: Acesso e manipulação de dados.
-Vantagens incluem modularidade, flexibilidade e reusabilidade do código. Um exemplo bem conhecido é o modelo de referência OSI e o modelo TCP/IP​​​​.
+- Camada de Apresentação (UI): Interface com o usuário.
+- Camada de Aplicação: Lógica de negócios e processamento.
+- Camada de Dados: Acesso e manipulação de dados.
+- Vantagens incluem modularidade, flexibilidade e reusabilidade do código. Um exemplo bem conhecido é o modelo de referência OSI e o modelo TCP/IP​​​​.
 
 3. Arquitetura Cliente-Servidor
 Na arquitetura cliente-servidor, duas partes interagem em uma rede: o cliente e o servidor. O cliente faz solicitações de serviços ou recursos, e o servidor processa essas solicitações e fornece respostas. Os componentes principais são:
